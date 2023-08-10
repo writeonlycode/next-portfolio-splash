@@ -1,0 +1,43 @@
+{
+  "title": "John Doe",
+  "subtitle": "Full-Stack Engineer + Next & React Expert",
+  "social": [
+    {
+      "label": "Twitter",
+      "icon": "FaTwitter",
+      "link": "https://twitter.com/",
+      "type": "IconLink",
+      "_raw": {}
+    },
+    {
+      "label": "Facebook",
+      "icon": "FaFacebook",
+      "link": "https://facebook.com/",
+      "type": "IconLink",
+      "_raw": {}
+    },
+    {
+      "label": "GitHub",
+      "icon": "FaGithub",
+      "link": "https://github.com/",
+      "type": "IconLink",
+      "_raw": {}
+    },
+    {
+      "label": "LinkedIn",
+      "icon": "FaLinkedin",
+      "link": "https://linkedin.com/",
+      "type": "IconLink",
+      "_raw": {}
+    }
+  ],
+  "_id": "data/hero.yaml",
+  "_raw": {
+    "sourceFilePath": "data/hero.yaml",
+    "sourceFileName": "hero.yaml",
+    "sourceFileDir": "data",
+    "contentType": "data",
+    "flattenedPath": "data/hero"
+  },
+  "type": "Hero"
+}

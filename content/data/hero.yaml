@@ -1,0 +1,21 @@
+type: "Hero"
+
+title: "John Doe"
+subtitle: "Full-Stack Engineer + Next & React Expert"
+social:
+  - label: "Twitter"
+    icon: "FaTwitter"
+    link: "https://twitter.com/"
+
+  - label: "Facebook"
+    icon: "FaFacebook"
+    link: "https://facebook.com/"
+
+  - label: "GitHub"
+    icon: "FaGithub"
+    link: "https://github.com/"
+
+  - label: "LinkedIn"
+    icon: "FaLinkedin"
+    link: "https://linkedin.com/"
+
