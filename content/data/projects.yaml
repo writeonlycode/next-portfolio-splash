@@ -1,0 +1,54 @@
+type: "Projects"
+
+entries:
+  - title: "Project"
+    subtitle: "Simon Game"
+    text: >
+      An inquisitive Computer Science Engineering student, skilled in
+      leadership, seeking to leverage solid development skills with focus on
+      collaboration, communication and passion.
+    tags:
+      - "HTML5"
+      - "CSS3"
+      - "JavaScript"
+      - "React.js"
+    links:
+      - label: "GitHub"
+        icon: "FaGithub"
+        link: "https://github.com/"
+    image: "/assets/images/walkator.jpg"
+
+  - title: "Project"
+    subtitle: "Simon Game"
+    text: >
+      An inquisitive Computer Science Engineering student, skilled in
+      leadership, seeking to leverage solid development skills with focus on
+      collaboration, communication and passion.
+    tags:
+      - "HTML5"
+      - "CSS3"
+      - "JavaScript"
+      - "React.js"
+    links:
+      - icon: ""
+        label: ""
+        link: ""
+    image: "/assets/images/walkator.jpg"
+
+  - title: "Project"
+    subtitle: "Simon Game"
+    text: >
+      An inquisitive Computer Science Engineering student, skilled in
+      leadership, seeking to leverage solid development skills with focus on
+      collaboration, communication and passion.
+    tags:
+      - "HTML5"
+      - "CSS3"
+      - "JavaScript"
+      - "React.js"
+    links:
+      - icon: ""
+        label: ""
+        link: ""
+    image: "/assets/images/walkator.jpg"
+

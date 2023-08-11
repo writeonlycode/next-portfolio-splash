@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         primary: "#F44336",
+        secondary: "#928A97",
         dark: "#000C24",
         light: "#FFFFFF",
       },

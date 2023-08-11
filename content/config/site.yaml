@@ -1,0 +1,26 @@
+type: "Site"
+
+title: "Lorem Ipsum"
+description: ""
+social:
+  - label: "Twitter"
+    icon: "FaTwitter"
+    link: "https://twitter.com/"
+
+  - label: "Facebook"
+    icon: "FaFacebook"
+    link: "https://facebook.com/"
+
+  - label: "GitHub"
+    icon: "FaGithub"
+    link: "https://github.com/"
+
+  - label: "LinkedIn"
+    icon: "FaLinkedin"
+    link: "https://linkedin.com/"
+copyright:
+  - label: "Copyright © 2023 Iago Bozza. All rights reserved."
+  - label: "Next.js Project by Iago Bozza"
+    link: "https://github.com/writeonlycode/next-portfolio-splash"
+  - label: "Original Design by Akhil T J"
+    link: "https://www.figma.com/community/file/1006095821656678611/Developer-Portfolio"
