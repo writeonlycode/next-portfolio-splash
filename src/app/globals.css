@@ -23,6 +23,11 @@ body {
   text-shadow: 1px 1px 0 #ffffff, -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
 }
 
+.diagonal-clip-start {
+  clip-path: polygon(0 0, 0 90%, 100% 100%, 100% 0);
+}
+
+
 .diagonal-clip-end {
   clip-path: polygon(0 0, 0 100%, 100% 90%, 100% 0);
 }

@@ -8,4 +8,4 @@ text: >
 buttons:
   - label: "Download CV"
     link: "#"
-image: "christina-wocintechchat.jpg"
+image: "/assets/images/christina-wocintechchat.jpg"

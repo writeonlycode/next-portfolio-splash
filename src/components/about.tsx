@@ -16,7 +16,7 @@ export default function AboutSection({ data }: { data: About }) {
             <div className="relative w-full lg:mx-16 aspect-[4/5]">
               <Image src={aboutEffect} alt="About Picture" className="-m-10" />
               <Image
-                src={require(`/assets/images/${data.image}`)}
+                src={data.image}
                 alt="About Picture"
                 className="object-cover grayscale brightness-90 diagonal-clip-end"
                 fill

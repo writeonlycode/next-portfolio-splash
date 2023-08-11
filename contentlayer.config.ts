@@ -57,4 +57,28 @@ export const About = defineDocumentType(() => ({
   },
 }));
 
-export default makeSource({ contentDirPath: "content", documentTypes: [Menu, Hero, About] });
+export const Skills = defineDocumentType(() => ({
+  name: "Skills",
+  description: "",
+  contentType: "data",
+  filePathPattern: "/data/skills.yaml",
+  isSingleton: true,
+  fields: {
+    title: { type: "string", required: true },
+    text: { type: "string", required: true },
+    entries: { type: "list", of: SkillEntry, required: true },
+    image: { type: "string", required: true },
+  },
+}));
+
+export const SkillEntry = defineNestedType(() => ({
+  name: "Skill",
+  description: "",
+  fields: {
+    label: { type: "string", required: true },
+    value: { type: "number", required: true },
+  },
+}));
+
+
+export default makeSource({ contentDirPath: "content", documentTypes: [Menu, Hero, About, Skills] });

@@ -1,0 +1,27 @@
+type: "Skills"
+
+title: "Skills"
+text: >
+  I enjoy creating things that live on the internet, whether that be websites,
+  applications, or anything in between.
+entries:
+  - label: "Next.js"
+    value: 100
+
+  - label: "React.js"
+    value: 100
+
+  - label: "JavaScript"
+    value: 100
+
+  - label: "Git"
+    value: 80
+
+  - label: "AWS"
+    value: 70
+
+  - label: "Docker"
+    value: 60
+
+
+image: "/assets/images/austin-poon.jpg"
