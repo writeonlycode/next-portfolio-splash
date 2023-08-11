@@ -22,3 +22,7 @@ body {
 .text-outline {
   text-shadow: 1px 1px 0 #ffffff, -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
 }
+
+.diagonal-clip-end {
+  clip-path: polygon(0 0, 0 100%, 100% 90%, 100% 0);
+}

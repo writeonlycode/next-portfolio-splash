@@ -7,7 +7,7 @@ import bgImage from "src/assets/images/spash-background.png";
 export default function HeroSection({ data }: { data: Hero }) {
   return (
     <section id="hero" className="relative text-white">
-      <Image src={bgImage} alt="Background Splash Image" className="object-cover -z-10" fill />
+      <Image src={bgImage} alt="Background Splash Image" className="object-cover -z-10" fill priority />
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="container flex flex-col justify-center min-h-screen px-8 lg:px-24">

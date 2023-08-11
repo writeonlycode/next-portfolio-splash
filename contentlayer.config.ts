@@ -43,4 +43,18 @@ export const IconLink = defineNestedType(() => ({
   },
 }));
 
-export default makeSource({ contentDirPath: "content", documentTypes: [Menu, Hero] });
+export const About = defineDocumentType(() => ({
+  name: "About",
+  description: "",
+  contentType: "data",
+  filePathPattern: "/data/about.yaml",
+  isSingleton: true,
+  fields: {
+    title: { type: "string", required: true },
+    text: { type: "string", required: true },
+    buttons: { type: "list", of: Link, required: true },
+    image: { type: "string", required: true },
+  },
+}));
+
+export default makeSource({ contentDirPath: "content", documentTypes: [Menu, Hero, About] });

@@ -1,0 +1,11 @@
+type: "About"
+
+title: "About Me"
+text: >
+  An inquisitive Computer Science Engineering student, skilled in leadership,
+  seeking to leverage solid development skills with focus on collaboration,
+  communication and passion.
+buttons:
+  - label: "Download CV"
+    link: "#"
+image: "christina-wocintechchat.jpg"
