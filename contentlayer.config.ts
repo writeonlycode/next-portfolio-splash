@@ -20,7 +20,7 @@ export const Link = defineNestedType(() => ({
   description: "",
   fields: {
     label: { type: "string", required: true },
-    link: { type: "string", required: false },
+    link: { type: "string", required: true },
   },
 }));
 
@@ -131,7 +131,16 @@ export const Site = defineDocumentType(() => ({
     title: { type: "string", required: true },
     description: { type: "string", required: true },
     social: { type: "list", of: IconLink, required: true },
-    copyright: { type: "list", of: Link, required: true },
+    copyright: { type: "list", of: Label, required: true },
+  },
+}));
+
+export const Label = defineNestedType(() => ({
+  name: "Label",
+  description: "",
+  fields: {
+    label: { type: "string", required: true },
+    link: { type: "string", required: false },
   },
 }));
 
