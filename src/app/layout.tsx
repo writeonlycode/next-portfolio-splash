@@ -6,7 +6,7 @@ import { site } from "contentlayer/generated";
 const spartan = League_Spartan({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: site.title,
+  title: `${site.title} | Home`,
   description: site.description,
 };
 

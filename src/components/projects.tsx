@@ -50,7 +50,7 @@ export default function ProjectsSection({ data }: { data: Projects }) {
                   return (
                     <span
                       key={tag}
-                      className="text-light font-medium bg-secondary px-3 py-2"
+                      className="text-light font-medium bg-dark/75 px-3 py-2"
                     >
                       {tag}
                     </span>
@@ -64,6 +64,7 @@ export default function ProjectsSection({ data }: { data: Projects }) {
                       key={iconLink.label}
                       href={iconLink.link}
                       className="w-8 h-8 hover:text-dark transition-colors"
+                      aria-label={iconLink.label}
                     >
                       {Icons[iconLink.icon]}
                     </Link>

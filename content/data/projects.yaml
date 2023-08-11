@@ -30,9 +30,9 @@ entries:
       - "JavaScript"
       - "React.js"
     links:
-      - icon: ""
-        label: ""
-        link: ""
+      - label: "GitHub"
+        icon: "FaGithub"
+        link: "https://github.com/"
     image: "/assets/images/walkator.jpg"
 
   - title: "Project"
@@ -47,8 +47,8 @@ entries:
       - "JavaScript"
       - "React.js"
     links:
-      - icon: ""
-        label: ""
-        link: ""
+      - label: "GitHub"
+        icon: "FaGithub"
+        link: "https://github.com/"
     image: "/assets/images/walkator.jpg"
 

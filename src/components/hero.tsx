@@ -22,6 +22,7 @@ export default function HeroSection({ data }: { data: Hero }) {
                     key={iconLink.label}
                     href={iconLink.link}
                     className="w-8 h-8 text-white/50 hover:text-white transition-colors"
+                    aria-label={iconLink.label}
                   >
                     {Icons[iconLink.icon]}
                   </Link>
