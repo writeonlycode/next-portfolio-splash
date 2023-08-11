@@ -16,10 +16,10 @@ export default function AboutSection({ data }: { data: About }) {
         fill
         priority
       />
-      <div className="container mx-auto lg:px-24">
+      <div className="container mx-auto px-8 lg:px-24">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-14">
           <div className="col-span-6 flex items-center justify-center">
-            <div className="relative w-full mx-16 aspect-[4/5]">
+            <div className="relative w-full lg:mx-16 aspect-[4/5]">
               <Image src={aboutEffect} alt="About Picture" className="-m-10" />
               <Image
                 src={require(`/assets/images/${data.image}`)}
