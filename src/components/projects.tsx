@@ -9,7 +9,7 @@ export default function ProjectsSection({ data }: { data: Projects }) {
     return (
       <section
         key={entry.title}
-        id={`project-${entry.title}`}
+        id={`project-${index}`}
         className="relative py-16"
       >
         <div className="container mx-auto px-8 lg:px-24">

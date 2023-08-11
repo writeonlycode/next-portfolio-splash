@@ -10,8 +10,8 @@ entries:
   - label: "Skills"
     link: "/#skills"
 
-  - label: "Works"
-    link: "/#works"
+  - label: "Projects"
+    link: "/#project-0"
 
   - label: "Contact"
     link: "/#contact"

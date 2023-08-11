@@ -5,7 +5,7 @@ import SkillBar from "./ui/SkillBar";
 
 export default function SkillsSection({ data }: { data: Skills }) {
   return (
-    <section id="about" className="relative overflow-hidden py-16">
+    <section id="skills" className="relative overflow-hidden py-16">
       <div className="absolute w-full h-full left-0 translate-x-2/3">
         <Image
           src={bgImage}
