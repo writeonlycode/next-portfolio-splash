@@ -4,7 +4,7 @@ Next Portfolio Splash is a visually captivating portfolio website designed
 specifically for developers to showcase their skills and projects in an elegant
 and engaging manner.
 
-![Next Portfolio Splash Screenshot](screenshot.png)
+![Next Portfolio Splash Screenshot](https://raw.githubusercontent.com/writeonlycode/next-portfolio-splash/master/src/assets/screenshots/next-portfolio-splash-hero.png)
 
 ## Demo Website
 
@@ -90,16 +90,16 @@ and showcase your work to the world!
 
 # Screenshots
 
-![Hero Section]()
+![Hero Section](https://raw.githubusercontent.com/writeonlycode/next-portfolio-splash/master/src/assets/screenshots/next-portfolio-splash-hero.png)
 
-![About Section]()
+![About Section](https://raw.githubusercontent.com/writeonlycode/next-portfolio-splash/master/src/assets/screenshots/next-portfolio-splash-about.png)
 
-![Skills Section]()
+![Skills Section](https://raw.githubusercontent.com/writeonlycode/next-portfolio-splash/master/src/assets/screenshots/next-portfolio-splash-skills.png)
 
-![Projects Section]()
+![Projects Section](https://raw.githubusercontent.com/writeonlycode/next-portfolio-splash/master/src/assets/screenshots/next-portfolio-splash-projects.png)
 
-![Contact Section]()
+![Contact Section](https://raw.githubusercontent.com/writeonlycode/next-portfolio-splash/master/src/assets/screenshots/next-portfolio-splash-contact.png)
 
-![Footer Section]()
+![Footer Section](https://raw.githubusercontent.com/writeonlycode/next-portfolio-splash/master/src/assets/screenshots/next-portfolio-splash-footer.png)
 
-![Lighthouse Scores]()
+![Lighthouse Scores](https://raw.githubusercontent.com/writeonlycode/next-portfolio-splash/master/src/assets/screenshots/next-portfolio-splash-lighthouse.png)
