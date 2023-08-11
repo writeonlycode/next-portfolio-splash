@@ -1,34 +1,105 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next Portfolio Splash
 
-## Getting Started
+Next Portfolio Splash is a visually captivating portfolio website designed
+specifically for developers to showcase their skills and projects in an elegant
+and engaging manner.
 
-First, run the development server:
+![Next Portfolio Splash Screenshot](screenshot.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Demo Website
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To see a live demo of the Next Landing website, please visit
+[https://next-portfolio-splash.vercel.app/](https://next-portfolio-splash.vercel.app/).
+Please note that this is a demo website and not a official website. If you have
+any questions or feedback, please feel free to contact us!
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Technologies Used
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- [Next.js](https://nextjs.org): A React framework for building server-rendered
+  applications and static websites.
+- [Tailwind CSS](https://tailwindcss.com): A utility-first CSS framework for
+  building responsive and stylish user interfaces.
+- [ContentLayer](https://contentlayer.dev): A powerful tool for managing and
+  querying content in Next.js applications.
+- [React Circular
+  Progressbar](https://github.com/kevinsqi/react-circular-progressbar): A
+  customizable circular progress bar component for React.
+- [React Icons](https://react-icons.github.io/react-icons): A library of
+  customizable icons for React projects.
 
-## Learn More
+## Instructions to Run Locally
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the repository:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```
+   git clone https://github.com/writeonlycode/next-portfolio-splash.git
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+2. Navigate to the project directory:
 
-## Deploy on Vercel
+   ```
+   cd next-portfolio-splash
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Install dependencies using npm:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```
+   npm run dev
+   ```
+
+5. Open your web browser and visit `http://localhost:3000` to see the website in action.
+
+## Instructions to Deploy to Vercel
+
+1. Sign up for a Vercel account at [https://vercel.com](https://vercel.com) if
+   you don't have one.
+
+2. Install the Vercel CLI globally:
+
+   ```
+   npm install -g vercel
+   ```
+
+3. Navigate to the project directory (if you're not already there):
+
+   ```
+   cd next-portfolio-splash
+   ```
+
+4. Run the following command to deploy to Vercel:
+
+   ```
+   vercel
+   ```
+
+5. Follow the prompts to link your Vercel account and configure your deployment
+   settings.
+
+6. Once the deployment is successful, your Next Portfolio Splash website will
+   be live at the provided URL.
+
+Feel free to customize and enhance the website according to your preferences
+and showcase your work to the world!
+
+
+# Screenshots
+
+![Hero Section]()
+
+![About Section]()
+
+![Skills Section]()
+
+![Projects Section]()
+
+![Contact Section]()
+
+![Footer Section]()
+
+![Lighthouse Scores]()
