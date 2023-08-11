@@ -3,19 +3,13 @@
 import Link from "next/link";
 import Image from "next/image";
 import { About } from "contentlayer/generated";
-import bgImage from "@/assets/images/about-splash-background.png";
 import aboutEffect from "@/assets/images/about-effect.png";
 
 export default function AboutSection({ data }: { data: About }) {
   return (
     <section id="about" className="relative py-16">
-      <Image
-        src={bgImage}
-        alt="Background Splash Image"
-        className="-translate-y-1/3 obect-cover -z-10"
-        fill
-        priority
-      />
+      <div className="container">
+      </div>
       <div className="container mx-auto px-8 lg:px-24">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-14">
           <div className="col-span-6 flex items-center justify-center">

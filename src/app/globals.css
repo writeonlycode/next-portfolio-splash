@@ -26,3 +26,7 @@ body {
 .diagonal-clip-end {
   clip-path: polygon(0 0, 0 100%, 100% 90%, 100% 0);
 }
+
+.h-150 {
+  height: 150% !important;
+}
