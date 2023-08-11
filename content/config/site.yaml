@@ -1,7 +1,12 @@
 type: "Site"
 
-title: "Lorem Ipsum"
-description: ""
+title: "Jane Doe"
+description: > 
+  Jane Doe is a seasoned Full-Stack Engineer and a recognized authority in the
+  realms of Next.js and React development. With an impressive track record of
+  delivering high-impact projects and innovative solutions, Jane combines her
+  deep technical expertise with a keen eye for user-centric design.
+
 social:
   - label: "Twitter"
     icon: "FaTwitter"
