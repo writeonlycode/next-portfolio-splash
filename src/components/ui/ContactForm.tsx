@@ -13,6 +13,8 @@ export default function ContactForm({ button }: { button: string }) {
 
   const handleSubmit = async (event: any) => {
     event.preventDefault();
+    setData(undefined);
+    setError(undefined);
     setIsMutating(true);
 
     const JSONdata = JSON.stringify({ name, email, message });
