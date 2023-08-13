@@ -12,12 +12,13 @@ export default function AboutSection({ data }: { data: About }) {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-14">
           <div className="col-span-6 flex items-center justify-center">
             <div className="relative w-full lg:mx-16 aspect-[4/5]">
-              <Image src={aboutEffect} alt="About Picture" className="-m-10" />
+              <Image src={aboutEffect} alt="About Picture" className="-m-10" priority/>
               <Image
                 src={data.image}
                 alt="About Picture"
                 className="object-cover grayscale brightness-90 diagonal-clip-end"
                 fill
+                priority
               />
             </div>
           </div>
