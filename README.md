@@ -128,7 +128,7 @@ the form.
 3. In the "Environment Variables" section, add the following environment
    variables with your SMTP server details:
 
-   ```
+   ```dotenv
    SMTP_HOST=your-smtp-host
    SMTP_PORT=your-smtp-port
    SMTP_USER=your-smtp-username
