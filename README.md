@@ -26,6 +26,8 @@ any questions or feedback, please feel free to contact us!
   customizable circular progress bar component for React.
 - [React Icons](https://react-icons.github.io/react-icons): A library of
   customizable icons for React projects.
+- [Nodemailer](https://nodemailer.com/): Nodemailer is a popular Node.js module
+  for sending email messages with ease.
 
 ## Instructions to Run Locally
 
