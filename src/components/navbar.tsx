@@ -45,6 +45,7 @@ export default function Navbar() {
           setIsOpen(!isOpen);
         }}
         className="lg:hidden absolute flex items-center justify-center top-0 left-0 w-10 h-10 m-8 z-20"
+        aria-label="Menu Toggler"
       >
         <FaXmark className={`${isOpen ? "" : "hidden"} w-8 h-8`} />
         <FaBars className={`${!isOpen ? "" : "hidden"} w-6 h-6`} />
