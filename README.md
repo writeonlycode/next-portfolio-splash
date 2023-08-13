@@ -88,6 +88,68 @@ Feel free to customize and enhance the website according to your preferences
 and showcase your work to the world!
 
 
+## Configuring Email Sending with Nodemailer
+
+To enable email functionality for the contact form, you'll need to configure
+Nodemailer with your SMTP server details. This will allow you to send emails to
+the specified destination and provide confirmation to the user who submitted
+the form.
+
+### Local Configuration
+
+1. Open the `.env` file in your project's root directory.
+
+2. Set the following environment variables with your SMTP server details:
+
+   ```dotenv
+   SMTP_HOST=your-smtp-host
+   SMTP_PORT=your-smtp-port
+   SMTP_USER=your-smtp-username
+   SMTP_PASSWORD=your-smtp-password
+   SMTP_FROM_NAME=your-from-name
+   SMTP_FROM_EMAIL=your-from-email
+   SMTP_TO_EMAIL=your-to-email
+   ```
+
+3. Save the `.env` file.
+
+4. Make sure you have Nodemailer and any required dependencies installed in
+   your project:
+
+5. Make sure the `.env` file is in your .gitignore and that you don't commit it
+   to a repository.
+
+### Configuration on Vercel
+
+1. Log in to your Vercel account and navigate to your project's dashboard.
+
+2. Go to the project settings.
+
+3. In the "Environment Variables" section, add the following environment
+   variables with your SMTP server details:
+
+   ```
+   SMTP_HOST=your-smtp-host
+   SMTP_PORT=your-smtp-port
+   SMTP_USER=your-smtp-username
+   SMTP_PASSWORD=your-smtp-password
+   SMTP_FROM_NAME=your-from-name
+   SMTP_FROM_EMAIL=your-from-email
+   SMTP_TO_EMAIL=your-to-email
+   ```
+
+4. Save the changes.
+
+5. Deploy your project to Vercel.
+
+Please make sure to replace placeholders (e.g., `your-smtp-host`,
+`your-smtp-port`, etc.) with your actual SMTP server details and email
+addresses.
+
+With these configurations in place, your contact form should now be able to
+send emails using Nodemailer both locally and when deployed to Vercel.
+
+
 # Screenshots
 
 ![Hero Section](https://raw.githubusercontent.com/writeonlycode/next-portfolio-splash/master/src/assets/screenshots/next-portfolio-splash-hero.png)
