@@ -21,9 +21,6 @@ any questions or feedback, please feel free to contact us!
   building responsive and stylish user interfaces.
 - [ContentLayer](https://contentlayer.dev): A powerful tool for managing and
   querying content in Next.js applications.
-- [React Circular
-  Progressbar](https://github.com/kevinsqi/react-circular-progressbar): A
-  customizable circular progress bar component for React.
 - [React Icons](https://react-icons.github.io/react-icons): A library of
   customizable icons for React projects.
 - [Resend](https://resend.com/): Is a service for building, testing, and
