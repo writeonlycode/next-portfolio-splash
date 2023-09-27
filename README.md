@@ -103,10 +103,11 @@ create an account, and create an API key to use with your website.
 
 1. Open the `.env` file in your project's root directory.
 
-2. Set the following environment variables with your SMTP server details:
+2. Set the following environment variables with your details:
 
    ```dotenv
    RESEND_API_KEY=your-resend-api-key
+   DESTINATION_EMAIL=your-email
    ```
 
 3. Save the `.env` file.
@@ -124,10 +125,11 @@ create an account, and create an API key to use with your website.
 2. Go to the project settings.
 
 3. In the "Environment Variables" section, add the following environment
-   variables with your SMTP server details:
+   variables with your details:
 
    ```dotenv
    RESEND_API_KEY=your-resend-api-key
+   DESTINATION_EMAIL=your-email
    ```
 
 4. Save the changes.
