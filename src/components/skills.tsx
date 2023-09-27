@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Skills } from "contentlayer/generated";
 import bgImage from "src/assets/images/splash-background.png";
-import SkillBar from "./ui/SkillBar";
+import ProgressBar from "./ui/ProgressBar";
 
 export default function SkillsSection({ data }: { data: Skills }) {
   return (
@@ -34,17 +34,11 @@ export default function SkillsSection({ data }: { data: Skills }) {
             <div className="flex justify-center flex-wrap gap-x-16 gap-y-8">
               {data.entries.map((skill) => {
                 return (
-                  <div
+                  <ProgressBar
                     key={skill.label}
-                    className="flex flex-col items-center w-24"
-                  >
-                    <div className="mb-1 w-24 h-24">
-                      <SkillBar value={skill.value} />
-                    </div>
-                    <p className="text-sm text-center font-medium">
-                      {skill.label}
-                    </p>
-                  </div>
+                    value={skill.value}
+                    label={skill.label}
+                  />
                 );
               })}
             </div>
