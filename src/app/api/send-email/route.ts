@@ -1,66 +1,22 @@
 import { NextRequest, NextResponse } from "next/server";
-import nodemailer from "nodemailer";
-import { generateEmail, generateEmailConfirmation } from "@/utils/email";
+import { Resend } from "resend";
 
 export async function POST(request: NextRequest) {
   const { name, email, message } = await request.json();
+  const resend = new Resend(process.env.RESEND_API_KEY);
 
   try {
-    await sendEmail({
-      to: process.env.SMTP_TO_EMAIL || "email@example.com",
-      subject: `You've received a message from ${name?.toString() || ""}!`,
-      html: generateEmail({ name, email, message }),
+    const data = await resend.emails.send({
+      from: "onboarding@resend.dev",
+      to: "next-portfolio-splash@writeonlycode.io",
+      subject: `Contact from ${name} thought Your Next Portfolio Splash`,
+      text: `${name} has sent you a message:\n\n${message}\n\nReply to them directly to their email: ${email}.`,
     });
-  } catch (error) {
-    console.log("Error: ", error);
-    return NextResponse.json({ error }, { status: 500 });
-  }
 
-  try {
-    await sendEmail({
-      to: email || "email@example.com",
-      subject: `Thanks for the message!`,
-      html: generateEmailConfirmation({ name, email, message }),
-    });
+    console.log("Success: ", data);
+    return NextResponse.json(data, { status: 200 });
   } catch (error) {
-    console.log("Error: ", error);
-    return NextResponse.json({ error }, { status: 500 });
+    console.error("Error: ", error);
+    return NextResponse.json(error, { status: 500 });
   }
-
-  console.log("Email sent!");
-  return NextResponse.json({ status: 200 });
 }
-
-type EmailPayload = {
-  to: string;
-  subject: string;
-  html: string;
-};
-
-const smtpOptions = {
-  host: process.env.SMTP_HOST || "",
-  port: parseInt(process.env.SMTP_PORT || ""),
-  secure: true,
-  tls: {
-    rejectUnauthorized: false,
-    ciphers: "SSLv3",
-  },
-  auth: {
-    user: process.env.SMTP_USER || "",
-    pass: process.env.SMTP_PASSWORD || "",
-  },
-};
-
-const sendEmail = async (data: EmailPayload) => {
-  const transporter = nodemailer.createTransport({
-    ...smtpOptions,
-  });
-
-  return await transporter.sendMail({
-    from: {
-      name: process.env.SMTP_FROM_NAME || "",
-      address: process.env.SMTP_FROM_EMAIL || "",
-    },
-    ...data,
-  });
-};

@@ -17,8 +17,8 @@ export default function Home() {
         <SkillsSection data={skills} />
         <ProjectsSection data={projects} />
         <ContactSection data={contact} />
-        <FooterSection data={site} />
       </main>
+      <FooterSection data={site} />
     </>
   );
 }

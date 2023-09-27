@@ -26,8 +26,8 @@ any questions or feedback, please feel free to contact us!
   customizable circular progress bar component for React.
 - [React Icons](https://react-icons.github.io/react-icons): A library of
   customizable icons for React projects.
-- [Nodemailer](https://nodemailer.com/): Nodemailer is a popular Node.js module
-  for sending email messages with ease.
+- [Resend](https://resend.com/): Is a service for building, testing, and
+  sending transactional emails at scale.
 
 ## Instructions to Run Locally
 
@@ -90,12 +90,14 @@ Feel free to customize and enhance the website according to your preferences
 and showcase your work to the world!
 
 
-## Configuring Email Sending with Nodemailer
+## Configuring the Contact Form with Resend
 
 To enable email functionality for the contact form, you'll need to configure
-Nodemailer with your SMTP server details. This will allow you to send emails to
-the specified destination and provide confirmation to the user who submitted
-the form.
+Resend with your API key. This will allow you to send emails to the specified
+destination and provide confirmation to the user who submitted the form.
+
+Before proceeding, you should go to [https://resend.com/](https://resend.com/),
+create an account, and create an API key to use with your website.
 
 ### Local Configuration
 
@@ -104,18 +106,12 @@ the form.
 2. Set the following environment variables with your SMTP server details:
 
    ```dotenv
-   SMTP_HOST=your-smtp-host
-   SMTP_PORT=your-smtp-port
-   SMTP_USER=your-smtp-username
-   SMTP_PASSWORD=your-smtp-password
-   SMTP_FROM_NAME=your-from-name
-   SMTP_FROM_EMAIL=your-from-email
-   SMTP_TO_EMAIL=your-to-email
+   RESEND_API_KEY=your-resend-api-key
    ```
 
 3. Save the `.env` file.
 
-4. Make sure you have Nodemailer and any required dependencies installed in
+4. Make sure you have Resend and any required dependencies installed in
    your project:
 
 5. Make sure the `.env` file is in your .gitignore and that you don't commit it
@@ -131,25 +127,15 @@ the form.
    variables with your SMTP server details:
 
    ```dotenv
-   SMTP_HOST=your-smtp-host
-   SMTP_PORT=your-smtp-port
-   SMTP_USER=your-smtp-username
-   SMTP_PASSWORD=your-smtp-password
-   SMTP_FROM_NAME=your-from-name
-   SMTP_FROM_EMAIL=your-from-email
-   SMTP_TO_EMAIL=your-to-email
+   RESEND_API_KEY=your-resend-api-key
    ```
 
 4. Save the changes.
 
 5. Deploy your project to Vercel.
 
-Please make sure to replace placeholders (e.g., `your-smtp-host`,
-`your-smtp-port`, etc.) with your actual SMTP server details and email
-addresses.
-
 With these configurations in place, your contact form should now be able to
-send emails using Nodemailer both locally and when deployed to Vercel.
+send emails using Resend both locally and when deployed to Vercel.
 
 
 # Screenshots
