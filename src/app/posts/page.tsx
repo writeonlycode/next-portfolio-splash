@@ -11,16 +11,18 @@ export default function Page() {
     <>
       <Navbar />
       <main className="flex flex-col min-h-screen">
-        <section id="post" className="relative overflow-hidden py-44">
-          <Image
-            src={bgImage}
-            alt="Background Splash Image"
-            className="object-cover -z-10 h-150"
-            fill
-            priority
-          />
+        <section id="post" className="overflow-hidden py-44">
+          <div className="absolute top-0 -z-10 w-full h-screen">
+            <Image
+              src={bgImage}
+              alt="Background Splash Image"
+              className="object-cover -z-10 h-100"
+              fill
+              priority
+            />
+          </div>
           <div className="container max-w-prose text-2xl text-white text-center p-10 mx-auto">
-            <h1 className="text-8xl font-bold">Posts</h1>
+            <h1 className="text-8xl font-bold text-outline-dark">Posts</h1>
           </div>
           <div className="container max-w-prose text-2xl bg-white p-10 mx-auto">
             {allPosts.map((post) => (
