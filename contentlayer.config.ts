@@ -164,17 +164,18 @@ export default makeSource({
   mdx: {
     remarkPlugins: [remarkMath],
     rehypePlugins: [
-      [
-        rehypeKatex,
-        {
-          output: "html",
-          displayMode: true,
-          delimiters: [
-            { left: "$$", right: "$$", display: true },
-            { left: "$", right: "$", display: false },
-          ],
-        },
-      ],
+      rehypeMathjax
+      // [
+      //   rehypeKatex,
+      //   {
+      //     output: "html",
+      //     displayMode: true,
+      //     delimiters: [
+      //       { left: "$$", right: "$$", display: true },
+      //       { left: "$", right: "$", display: false },
+      //     ],
+      //   },
+      // ],
     ],
   },
   documentTypes: [Site, Menu, Hero, About, Skills, Projects, Contact, Post],

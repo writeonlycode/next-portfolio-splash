@@ -9,8 +9,8 @@ import Image from "next/image";
 import bgImage from "src/assets/images/splash-background-full.png";
 
 
-import markdown from "./markdown.css";
-import katex from "katex/dist/katex.min.css"
+import "./markdown.css";
+import "katex/dist/katex.min.css"
 
 export async function generateStaticParams() {
   return allPosts.map((post) => ({
@@ -37,8 +37,6 @@ export default function Page({ params }: { params: { slug: string } }) {
 
   return (
     <>
-      <link rel="stylesheet" href={markdown} />
-      <link rel="stylesheet" href={katex} />
       <Navbar />
       <main className="flex flex-col min-h-screen">
         <section id="post" className="relative overflow-hidden py-44">
