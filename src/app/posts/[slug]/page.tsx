@@ -1,4 +1,5 @@
 import { allPosts, site } from "contentlayer/generated";
+import type { MDXComponents } from 'mdx/types'
 import { useMDXComponent } from "next-contentlayer/hooks";
 import { notFound } from "next/navigation";
 
@@ -6,6 +7,7 @@ import Navbar from "@/components/navbar";
 import FooterSection from "@/components/footer";
 import Image from "next/image";
 import bgImage from "src/assets/images/splash-background-full.png";
+
 
 import markdown from "./markdown.css";
 import katex from "katex/dist/katex.min.css"
@@ -15,6 +17,11 @@ export async function generateStaticParams() {
     slug: post._raw.flattenedPath,
   }));
 }
+
+const mdxComponents: MDXComponents = {
+Center: ({ children }) => <div style={{ textAlign: "center" }}>{children}</div>,
+}
+
 
 export default function Page({ params }: { params: { slug: string } }) {
   // Find the post for the current page.
@@ -49,7 +56,7 @@ export default function Page({ params }: { params: { slug: string } }) {
           </div>
           <div className="container max-w-prose text-2xl bg-white p-10 mx-auto">
             <div className="markdown">
-              <MDXContent />
+              <MDXContent components={mdxComponents} />
             </div>
           </div>
         </section>
