@@ -15,3 +15,6 @@ entries:
 
   - label: "Contact"
     link: "/#contact"
+
+  - label: "Posts"
+    link: "/posts"

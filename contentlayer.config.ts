@@ -4,6 +4,10 @@ import {
   makeSource,
 } from "contentlayer/source-files";
 
+import remarkMath from "remark-math";
+import rehypeMathjax from "rehype-mathjax";
+import rehypeKatex from "rehype-katex";
+
 export const Menu = defineDocumentType(() => ({
   name: "Menu",
   description: "",
@@ -144,7 +148,34 @@ export const Label = defineNestedType(() => ({
   },
 }));
 
+const Post = defineDocumentType(() => ({
+  name: "Post",
+  filePathPattern: `posts/**/*.mdx`,
+  contentType: "mdx",
+  fields: {
+    title: { type: "string", required: true },
+    author: { type: "string", required: false },
+    date: { type: "string", required: false },
+  },
+}));
+
 export default makeSource({
   contentDirPath: "content",
-  documentTypes: [Site, Menu, Hero, About, Skills, Projects, Contact],
+  mdx: {
+    remarkPlugins: [remarkMath],
+    rehypePlugins: [
+      [
+        rehypeKatex,
+        {
+          output: "html",
+          displayMode: true,
+          delimiters: [
+            { left: "$$", right: "$$", display: true },
+            { left: "$", right: "$", display: false },
+          ],
+        },
+      ],
+    ],
+  },
+  documentTypes: [Site, Menu, Hero, About, Skills, Projects, Contact, Post],
 });

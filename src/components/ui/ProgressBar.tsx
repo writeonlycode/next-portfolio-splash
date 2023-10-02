@@ -12,7 +12,7 @@ export default function ProgressBar({
         style={{
           width: 100,
           height: 100,
-          background: `radial-gradient(closest-side, white 70%, transparent 0% 100%), conic-gradient(#000D24 ${value}%, #D6D6D6 0);`,
+          background: `radial-gradient(closest-side, white 70%, transparent 0% 100%), conic-gradient(#000D24 ${value}%, #D6D6D6 0)`,
         }}
       >
         {value}%
