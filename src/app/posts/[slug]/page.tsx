@@ -1,5 +1,5 @@
 import { allPosts, site } from "contentlayer/generated";
-import type { MDXComponents } from 'mdx/types'
+import type { MDXComponents } from "mdx/types";
 import { useMDXComponent } from "next-contentlayer/hooks";
 import { notFound } from "next/navigation";
 
@@ -8,9 +8,8 @@ import FooterSection from "@/components/footer";
 import Image from "next/image";
 import bgImage from "src/assets/images/splash-background-full.png";
 
-
 import "./markdown.css";
-import "katex/dist/katex.min.css"
+// import "katex/dist/katex.min.css"
 
 export async function generateStaticParams() {
   return allPosts.map((post) => ({
@@ -19,9 +18,10 @@ export async function generateStaticParams() {
 }
 
 const mdxComponents: MDXComponents = {
-Center: ({ children }) => <div style={{ textAlign: "center" }}>{children}</div>,
-}
-
+  Center: ({ children }) => (
+    <div style={{ textAlign: "center" }}>{children}</div>
+  ),
+};
 
 export default function Page({ params }: { params: { slug: string } }) {
   // Find the post for the current page.
@@ -39,16 +39,18 @@ export default function Page({ params }: { params: { slug: string } }) {
     <>
       <Navbar />
       <main className="flex flex-col min-h-screen">
-        <section id="post" className="relative overflow-hidden py-44">
-          <Image
-            src={bgImage}
-            alt="Background Splash Image"
-            className="object-cover -z-10 h-150"
-            fill
-            priority
-          />
-          <div className="container max-w-prose text-2xl text-white text-center p-10 mx-auto">
-            <h1 className="text-8xl font-bold">{post.title}</h1>
+        <section id="post" className="overflow-hidden py-44">
+          <div className="absolute top-0 -z-10 w-full h-screen">
+            <Image
+              src={bgImage}
+              alt="Background Splash Image"
+              className="object-cover -z-10 h-100"
+              fill
+              priority
+            />
+          </div>
+          <div className="container max-w-prose text-2xl text-light text-center p-10 mx-auto">
+            <h1 className="text-8xl font-bold text-outline-dark">{post.title}</h1>
             <p className="text-md">{post.author}</p>
             <p className="text-sm">{post.date}</p>
           </div>

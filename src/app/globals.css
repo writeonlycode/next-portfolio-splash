@@ -28,6 +28,11 @@ body {
     -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
 }
 
+.text-outline-dark {
+  text-shadow: 1px 1px 0 #000C24, -1px -1px 0 #000C24, 1px -1px 0 #000C24,
+    -1px 1px 0 #000C24, 1px 1px 0 #000C24;
+}
+
 .diagonal-clip-start {
   clip-path: polygon(0 0, 0 90%, 100% 100%, 100% 0);
 }

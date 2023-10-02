@@ -164,7 +164,15 @@ export default makeSource({
   mdx: {
     remarkPlugins: [remarkMath],
     rehypePlugins: [
-      rehypeMathjax
+      [
+        rehypeMathjax,
+        {
+          tex: {
+            inlineMath: [["$", "$"]],
+            displayMath: [["$$", "$$"]],
+          },
+        },
+      ],
       // [
       //   rehypeKatex,
       //   {
