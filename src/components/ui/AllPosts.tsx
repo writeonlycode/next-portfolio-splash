@@ -4,9 +4,22 @@ import { useState } from "react";
 import { allPosts } from "contentlayer/generated";
 import Link from "next/link";
 
+function compareDates(a: string, b: string) {
+  const dateA = new Date(a).getTime();
+  const dateB = new Date(b).getTime();
+
+  if (dateA > dateB) {
+    return -1;
+  } else if (dateA < dateB) {
+    return 1;
+  } else {
+    return 0;
+  }
+}
+
 export default function AllPosts() {
   const [limit, setLimit] = useState(2);
-  const sortedPosts = allPosts.sort((a, b) => new Date(a.date || "").getTime() < new Date(b.date || "").getTime() ? 1 : -1);
+  const sortedPosts = allPosts.sort((a, b) => compareDates(a.date || "", b.date || ""));
   const paginatedPosts = sortedPosts.slice(0, limit);
 
   return (
@@ -27,7 +40,12 @@ export default function AllPosts() {
         </Link>
       ))}
       <div className="text-center mt-10">
-        <button className="bg-primary text-light px-10 py-2" onClick={() => setLimit( limit + 2 )}>More Posts</button>
+        <button
+          className="bg-primary text-light px-10 py-2"
+          onClick={() => setLimit(limit + 2)}
+        >
+          More Posts
+        </button>
       </div>
     </>
   );
