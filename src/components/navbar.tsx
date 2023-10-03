@@ -13,7 +13,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   const isActive = (link: string) => {
-    return link === pathname;
+    return link === pathname || link === `/${pathname.split("/").at(1)}`;
   };
 
   return (

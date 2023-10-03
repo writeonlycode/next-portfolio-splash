@@ -4,6 +4,7 @@ import Navbar from "@/components/navbar";
 import FooterSection from "@/components/footer";
 import Image from "next/image";
 import bgImage from "src/assets/images/splash-background-full.png";
+import AllPosts from "@/components/ui/AllPosts";
 
 
 export default function Page() {
@@ -24,22 +25,8 @@ export default function Page() {
           <div className="container max-w-prose text-2xl text-white text-center p-10 mx-auto">
             <h1 className="text-8xl font-bold text-outline-dark">Posts</h1>
           </div>
-          <div className="container max-w-prose text-2xl bg-white p-10 mx-auto">
-            {allPosts.map((post) => (
-              <a className="flex items-center justify-between my-2" href={post._raw.flattenedPath} key={post.title}>
-                <div className="">
-                  <span className="">
-                    {post.title}
-                  </span>
-                  <span className="text-sm mx-4">
-                    by {post.author}
-                  </span>
-                </div>
-                <div className="text-base">
-                  {post.date}
-                </div>
-              </a>
-            ))}
+          <div className="container max-w-prose text-2xl bg-white p-10 mx-auto transition-all">
+            <AllPosts />
           </div>
         </section>
       </main>
